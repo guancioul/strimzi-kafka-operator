@@ -33,8 +33,7 @@ public class PodOperator extends AbstractReadyNamespacedResourceOperator<Kuberne
      * @param client The Kubernetes client
      */
     public PodOperator(Vertx vertx, KubernetesClient client) {
-        super(vertx, client, "Pods");
-        cascadingDeletionPropagation = DeletionPropagation.FOREGROUND;
+        this(vertx, client, false);
     }
 
     /**
