@@ -798,7 +798,7 @@
                     <executions>
                         <execution>
                             <id>copy-dependencies</id>
-                            <phase>prepare-package</phase>
+                            <phase>none</phase>
                             <goals>
                                 <goal>copy-dependencies</goal>
                             </goals>
@@ -813,7 +813,7 @@
                         </execution>
                         <execution>
                             <id>set-classpath</id>
-                            <phase>prepare-package</phase>
+                            <phase>none</phase>
                             <goals>
                                 <goal>build-classpath</goal>
                             </goals>
