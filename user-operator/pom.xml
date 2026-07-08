@@ -145,7 +145,7 @@
                     </execution>
                     <execution>
                         <id>set-classpath</id>
-                        <phase>package</phase>
+                        <phase>prepare-package</phase>
                     </execution>
                     <execution>
                         <id>analyze</id>
